@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreApi", "CoreApi\CoreApi.csproj", "{88E44869-18C9-4185-93BC-54FE3D76BCDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreApiTests", "CoreApiTests", "{B8FBCC8A-9F6B-4F95-A9C5-5A4134B2CF48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreApiTests", "CoreApiTests\CoreApiTests.csproj", "{19BBCC94-0182-4F3F-A6A4-9DB3401CADCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88E44869-18C9-4185-93BC-54FE3D76BCDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E44869-18C9-4185-93BC-54FE3D76BCDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E44869-18C9-4185-93BC-54FE3D76BCDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E44869-18C9-4185-93BC-54FE3D76BCDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19BBCC94-0182-4F3F-A6A4-9DB3401CADCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19BBCC94-0182-4F3F-A6A4-9DB3401CADCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19BBCC94-0182-4F3F-A6A4-9DB3401CADCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19BBCC94-0182-4F3F-A6A4-9DB3401CADCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

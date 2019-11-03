@@ -1,0 +1,45 @@
+<h1>Persons</h1>
+
+<form [formGroup]="form" (ngSubmit)="save()" #formDir="ngForm" novalidate>
+    <div class="form-group row">
+        <label class="control-label col-md-12">First Name</label>
+        <div class="col-md-12">
+            <input class="form-control" type="text" [formControlName]="firstName">
+        </div>
+        <span class="text-danger ml-3" *ngIf="firstName.invalid && formDir.submitted">
+          First Name is required.
+        </span>
+    </div>
+
+    <div class="form-group row">
+        <label class="control-label col-md-12">Last Name</label>
+        <div class="col-md-12">
+            <input class="form-control" type="text" [formControlName]="lastName">
+        </div>
+        <span class="text-danger ml-3" *ngIf="lastName.invalid && formDir.submitted">
+            Last Name is required.
+        </span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-success float-right">Save</button>
+    </div>
+</form>
+
+<p *ngIf="!(persons$ | async)"><em>Loading...</em></p>
+
+<table class="table table-sm table-hover" *ngIf="(persons$ | async)">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let person of persons">
+      <td>{{ person.firstName }}</td>
+      <td>{{ person.lastName }}</td>
+    </tr>
+  </tbody>
+</table>
